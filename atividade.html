@@ -8,20 +8,26 @@
 </head>
 <body>
     <script>
-  let nota1 = Number (prompt("Informe sua nota"));
-  let nota2 = Number (prompt("Informe sua nota"));
 
-  if (nota1 >= 0 && nota1 <= 10 && nota2 >= 0 && nota2 <= 10);
-     let média = (nota1 + nota2) / 2;
+  let nota1 = Number(prompt("Digite sua primera nota"));
+  let nota2 = Number(prompt("Digite sua segunda nota"));
 
-  if (média >= 6);
-      alert ("Você está aprovado" + média .toFixed (2))
 
-  if (média <= 6);
-      alert ("Você está reprovado" + méda .toFixed (2))
+if (nota1 >= 0 && nota1 <= 10 && nota2 >= 0 && nota2 <= 10){
 
-   if (média >= 11)
-      alert ("As notas não são compatíveis")   
+    let media = (nota1 + nota2) /2;
+
+if (media >= 6) {
+    alert ("Você está a cima da média. Aprovado " + media.toFixed());
+
+} else{
+    alert("Você está abaixo da média. Reprovado! " + media.toFixed());
+}
+ 
+} else{
+
+    alert("notas invalidas")
+}
     
 
     </script>
